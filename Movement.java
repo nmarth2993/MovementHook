@@ -1,5 +1,3 @@
-package movement;
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -11,7 +9,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-public class things {
+public class Movement {
 	
 	JFrame frame;
 	DrawPanel panel;
@@ -34,7 +32,7 @@ public class things {
 	int x = 0;
 	int y = 0;
 	
-	public things() {
+	public Movement() {
 //		for (int z = 0; z < dots; z++) {
 //            xPos[z] = 50 - z * DOT_SIZE;
 //            yPos[z] = 50;
@@ -69,7 +67,7 @@ public class things {
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
 				JFrame.setDefaultLookAndFeelDecorated(true);
-				new things();
+				new Movement();
 			}
 		});
 	}
